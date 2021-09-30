@@ -1,0 +1,4 @@
+*.o
+performance
+rehash_test
+rehash_performance

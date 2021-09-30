@@ -1,0 +1,7 @@
+chained_hash_map_test
+chained_hash_set_test
+linked_lists_map_test
+linked_lists_set_test
+open_addressing_hash_map_test
+open_addressing_hash_set_test
+*.o
