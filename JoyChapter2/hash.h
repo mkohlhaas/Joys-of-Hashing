@@ -15,7 +15,7 @@ typedef struct hash_table
   uint32_t    size;
 } HashTable;
 
-HashTable* empty_table  (uint32_t size);
+HashTable* new_table    (uint32_t size);
 void       delete_table (HashTable* table);
 void       insert_key   (HashTable* table, uint32_t key);
 bool       contains_key (HashTable* table, uint32_t key);
