@@ -5,7 +5,7 @@
 static unsigned int
 random_key()
 {
-  unsigned int key = (unsigned int)random();
+  unsigned int key = random();
   if (key == 0 || key == 1) return 2;
   return key;
 }

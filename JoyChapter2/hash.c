@@ -6,7 +6,7 @@ HashTable*
 empty_table(uint32_t size)
 {
   HashTable* table = malloc(sizeof *table);
-  table->table     = malloc(size * sizeof(Bin));
+  table->table     = malloc(size * sizeof *table->table);
   for (uint32_t i = 0; i < size; ++i) {
     Bin* bin     = &table->table[i];
     bin->is_free = true;

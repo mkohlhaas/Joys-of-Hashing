@@ -1,8 +1,10 @@
-hash_test: hash_test.o hash.o
-	cc -o hash_test hash_test.o hash.o
+.PHONY: all clean
 
-hash.o: hash.c hash.h
-hash_test.o: hash_test.c hash.h
+all: hash_test
+
+hash_test: hash.o
+hash.o: hash.h
+hash_test.o: hash.h
 
 clean:
 	@-rm hash_test *.o
